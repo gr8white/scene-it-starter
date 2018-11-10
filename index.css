@@ -19,5 +19,9 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-around;	
-	height: 85rem;
+}
+
+.card-body h5 {
+	display: flex;
+	justify-content: space-between;
 }

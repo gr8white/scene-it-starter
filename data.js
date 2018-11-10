@@ -1,4 +1,5 @@
-var movieData = [
+window.SCENE_IT = window.SCENE_IT || {}
+window.SCENE_IT.movieData = [
   {
     Title: 'The Dark Knight',
     Year: '2008',
@@ -70,3 +71,4 @@ var movieData = [
     Poster: 'https://ia.media-imdb.com/images/M/MV5BMTcxNDE1OTgyOF5BMl5BanBnXkFtZTcwMTEyMzMxOQ@@._V1_SX300.jpg'
   }
 ]
+
