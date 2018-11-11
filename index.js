@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var container = document.getElementById('chicken')
+  var container = document.getElementById('container')
 
   function renderMovies (movieArray) {
     var movieHTML = movieArray.map((currentMovie) => {
@@ -17,5 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }).join('')
     return movieHTML
   }
-  container.innerHTML = renderMovies(window.SCENE_IT.movieData)
+  // container.innerHTML = renderMovies(window.SCENE_IT.movieData)
+  document.getElementById('search-form').addEventListener('submit', function (e) {
+    e.preventDefault()
+    container.innerHTML = renderMovies(window.SCENE_IT.movieData)
+  })
 })
